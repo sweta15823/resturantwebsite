@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu</title>
+    <link rel="stylesheet" href="signinfood.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+        .total{
+
+            width: 90px;
+            background-color: green;
+            position: sticky;
+            right: 20px; top: 0px; left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="total">
+            <p>Total Amount: $<span id="total-amount">0.00</span></p>
+        </div> 
+        
+        <!-- <div class="food-item">
+            <p>Burger - $5.00</p>
+            <button class="add-to-cart" data-price="5.00">Add to Cart</button>
+        </div>
+        <div class="food-item">
+            <p>Pizza - $8.00</p>
+            <button class="add-to-cart" data-price="8.00">Add to Cart</button>
+        </div>
+        <div class="food-item">
+            <p>Salad - $4.00</p>
+            <button class="add-to-cart" data-price="4.00">Add to Cart</button>
+        </div>
+        <div class="total">
+            <p>Total Amount: $<span id="total-amount">0.00</span></p>
+        </div> -->
+        <section id="food-menu">
+            <h2 class="food-menu-heading">Food Menu</h2>
+            <h2 class="food-titile">Starters</h2>
+            <div class="food-menu-container container">
+                
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="bruschetta-bliss.jpg" alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Bruschetta Bliss</h2>
+                        <p>
+                            Grilled artisan bread topped with marinated tomatoes, 
+                            fresh basil, and a balsamic glaze.
+                        </p>
+                        <p class="food-price">Price: &#8377; 200</p>
+                       
+                        
+            <button class="add-to-cart" data-price="200.00">Add to Cart</button>
+                    </div>
+                </div>
+    
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="https://th.bing.com/th/id/OIP.zfiQyR_YSSoGcjRd0juZ7gHaLH?w=195&h=293&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="error" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Creamy Crab Dip</h2>
+                        <p>
+                            A rich blend of crab, cream cheese,
+                             and spices, served with toasted baguette slices.
+                        </p>
+                        <p class="food-price">Price: &#8377; 150</p>
+                        <button class="add-to-cart" data-price="150.00">Add to Cart</button>
+                        
+                    </div>
+                </div>
+
+               
+
+
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="download1.jpeg" alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Blissful Beet Salad</h2>
+                        <p>
+                            Roasted beets with goat cheese,
+                             arugula, candied walnuts, and a citrus vinaigrette.
+                             Soups and Salads
+    
+                        </p>
+                        <p class="food-price">Price: &#8377; 150</p>
+                        <button class="add-to-cart" data-price="150.00">Add to Cart</button>
+                        
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="OIP.jpeg" alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">French Onion Soup</h2>
+                        <p>
+                            Classic onion soup topped with a toasted 
+                            crouton and melted Gruyère cheese.
+    
+                        </p>
+                        <p class="food-price">Price: &#8377; 250</p>
+                        <button class="add-to-cart" data-price="250.00">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="https://i.postimg.cc/KYnDqxkP/food-menu5.jpg" alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Blissful Caesar</h2>
+                        <p>
+                            Crisp romaine lettuce, Parmesan cheese, and 
+                            homemade croutons, tossed in our signature 
+                            Caesar dressing.
+    
+                        </p>
+                        <p class="food-price">Price: &#8377; 250</p>
+                        <button class="add-to-cart" data-price="250.00">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="https://i.postimg.cc/Jnxc8xQt/food-menu6.jpg" alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Harvest Salad</h2>
+                        <p>
+                            Mixed greens with roasted butternut squash, cranberries, 
+                            pecans, and feta cheese, drizzled with a maple vinaigrette.
+    
+                        </p>
+                        <p class="food-price">Price: &#8377; 200</p>
+                        <button class="add-to-cart" data-price="200.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <h2 class="food-titile">Main Courses</h2>
+            <div class="food-menu-container container">
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="https://i.postimg.cc/wTLMsvSQ/food-menu1.jpg" alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Grilled Salmon</h2>
+                        <p>
+                            Fresh Atlantic salmon fillet served with 
+                            quinoa salad and a lemon-dill sauce.
+    
+                        </p>
+                        <p class="food-price">Price: &#8377; 300</p>
+                        <button class="add-to-cart" data-price="300.00">Add to Cart</button>
+                    </div>
+                </div>
+    
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="https://i.postimg.cc/sgzXPzzd/food-menu2.jpg" alt="error" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Steak Frites</h2>
+                        <p>
+                            Tender ribeye steak cooked to perfection, 
+                            served with crispy French fries and a side 
+                            of garlic aioli.
+    
+                        </p>
+                        <p class="food-price">Price: &#8377; 350</p>
+                        <button class="add-to-cart" data-price="350.00">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="https://i.postimg.cc/8zbCtYkF/food-menu3.jpg" alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Vegetarian Risotto</h2>
+                        <p>
+                            Creamy risotto with seasonal vegetables, 
+                            finished with Parmesan cheese and truffle oil.
+    
+    
+                        </p>
+                        <p class="food-price">Price: &#8377; 350</p>
+                        <button class="add-to-cart" data-price="350.00">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="https://i.postimg.cc/Yq98p5Z7/food-menu4.jpg" alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Chicken Piccata</h2>
+                        <p>
+                            Pan-seared chicken breast in a tangy 
+                            lemon-caper sauce, served with garlic mashed 
+                            potatoes and steamed asparagus.
+                        </p>
+                        <p class="food-price">Price: &#8377; 350</p>
+                        <button class="add-to-cart" data-price="350.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <h2 class="food-titile">Desserts & Beverages</h2>
+            <div class="food-menu-container container">
+                
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="coco.jpeg" alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Blissful Chocolate Mousse</h2>
+                        <p>
+                            Rich chocolate mousse topped with fresh
+                             berries and whipped cream.
+    
+                        </p>
+                        <p class="food-price">Price: &#8377; 200</p>
+                        <button class="add-to-cart" data-price="200.00">Add to Cart</button>
+                    </div>
+                </div>
+    
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="creme.jpeg" alt="error" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Classic Crème Brûlée</h2>
+                        <p>
+                            Silky custard with a caramelized sugar crust,
+                             garnished with fresh mint.
+    
+                        </p>
+                        <p class="food-price">Price: &#8377; 150</p>
+                        <button class="add-to-cart" data-price="150.00">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="fruit.jpeg" alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Seasonal Fruit Tart</h2>
+                        <p>
+                            A delicate tart filled with pastry cream 
+                            and topped with a selection of fresh, seasonal fruits
+    
+                        </p>
+                        <p class="food-price">Price: &#8377; 150</p>
+                        <button class="add-to-cart" data-price="150.00">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="coffee.jpeg" alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Blissful Brew Coffee</h2>
+                        <p>
+                            Our signature house blend coffee.
+                            Artisan Teas: A selection of premium teas.
+    
+    
+                        </p>
+                        <p class="food-price">Price: &#8377; 250</p>
+                        <button class="add-to-cart" data-price="250.00">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="cocktail.jpeg" alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Wine & Cocktails</h2>
+                        <p>
+                            A curated list of wines and handcrafted cocktails 
+                            available upon request.
+    
+                        </p>
+                        <p class="food-price">Price: &#8377; 200</p>
+                        <button class="add-to-cart" data-price="200.00">Add to Cart</button>
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+            
+        </section>
+
+
+
+
+
+        <button id="payButton">Proceed to Payment</button>
+    </div>
+    <script src="signinfoodmenu.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
